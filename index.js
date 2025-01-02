@@ -9,12 +9,16 @@ const person = {
         games: 'UFC'
     },
     sayHello: function () {
-        console.log(this.name)
+        console.log(`Hello ${this.name}`)
     }
 }
-console.log(person)
+// console.log(person)
+//
+// person.sayHello()
 
-person.sayHello()
+const {name, age,job, hobbies: {sport, games}, sayHello} = person;
+
+sayHello()
 // How to know length of our object
 
 // console.log(Object.keys(person).length)
