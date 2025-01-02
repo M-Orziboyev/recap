@@ -1,49 +1,44 @@
-// Massive
-
-const colors = ['red', 'blue', 'green', 'yellow', 'brown']
-
-console.log(`Massive uzunligi: ${colors.length}`)
-console.log(`Index yordamida element olish: ${colors[2]}`)
-console.log(`Oxirigi elementni o'chiradi: ${colors.pop()}`)
-console.log(`Oxiriga bitta yangi element qo'shadi ${colors.push('gray')}`)
-// console.log(`Oldidagi elementni o'chiradi: ${colors.shift()}`)
-// console.log(`Oldidan bitta yangi element qo'shadi ${colors.unshift('gray')}`)
-
-//Pop va Push
-//Pop --> bu massivni oxirigi elementini o'chiradi
-//Push --> bu massivning oxiriga bitta yangi element qo'shadi
-//Shift va Unshift
-//Shift --> bu massivni oxirigi elementini o'chiradi
-//Unshift --> bu massivning oxiriga bitta yangi element qo'shadi
-
-
-console.log(colors)
-
-
-
-const cars = ['BMW', 'Audi', 'Subaru', 'Suzuki', 'Mers']
-//Iteration
-
-// for (let i = 0; i < cars.length; i++){
-//     console.log(cars[i])
-// }
-
-// for (let car of cars){
-//     console.log(car)
-// }
-
-// colors.forEach((item, index, arr) => {
-//     console.log(`${index}: ${item}`)
-// })
-
-const numbers = [12,45,23,55]
-
-numbers.sort(compareFn)
-
-function compareFn(a, b){
-    return a - b
+const person = {
+    name: 'John',
+    age: '33',
+    hobbies: {
+        sport: 'Football',
+        games: 'UFC'
+    }
 }
 
-console.log(numbers)
+// #1 Iteration
+// const copyObject = obj => {
+//     const clone = {}
+//
+//     for (let key in obj){
+//         clone[key] = obj[key]
+//     }
+//     return  clone
+// }
+//
+// const sample = copyObject(person)
+// sample.name = 'Muffy'
+// sample.age = 18
+// console.log(person)
+// console.log(sample)
 
+// #2 Object.assign() yordamida
 
+// const secondPerson = Object.assign({isMarried:false}, person)
+//
+// secondPerson.name = 'Muffy'
+// secondPerson.age = 18
+//
+// console.log(person)
+// console.log(secondPerson)
+
+// #3 Spread operatori yordamida iteratsiya. Bu ES8 da paydo bo'lgan javascriptda
+
+const secondPerson = { ...person }
+
+secondPerson.name = 'Muffy'
+secondPerson.age = 18
+
+console.log(person)
+console.log(secondPerson)
