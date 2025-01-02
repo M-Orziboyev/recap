@@ -1,32 +1,66 @@
-// String methods
+let numberOfSeries
 
-const text = 'Hello World';
-const password = '    Password     ';
+startApp()
 
-// Length is a property
-console.log('Ma`lumot uzunligi:', text.length);
-console.log('Ma`lumot uzunlig:', password.length);
+const seriesDB = {
+    count: numberOfSeries,
+    series: {},
+    actors: {},
+    genres: [],
+    private: false,
+}
 
-//Methods
+setFavouriteSeries()
+detectingLevel()
+writeGenres()
+showDb(seriesDB.private)
 
-console.log('1# Aniq positsiyadagi indexni aniqlash:', text.charAt(2))
-console.log('2# Aniq positsiyadagi indexni aniqlash:', text[1])
-console.log('Xarflarni katta registerda qilish:', text.toUpperCase())
-console.log('Xarflarni kichik registerda qilish:', text.toLowerCase())
-console.log('1# Matnni bosh va oxiridan kesish:', text.slice(0, 4))
-console.log('1# Matnni bosh va oxiridan kesish:', text.substring(0, 2))
-console.log('Ikki tarafdan space olib tashlash', password.trim())
-console.log('Bosh tarafdan space olib tashlash', password.trimStart())
-console.log('Oxiridan space olib tashlash', password.trimEnd())
+function startApp() {
+    numberOfSeries = +prompt('Nechta serial ko’rdingiz?', '')
 
+    while (
+        numberOfSeries == '' ||
+        numberOfSeries == null ||
+        isNaN(numberOfSeries)
+        ) {
+        numberOfSeries = +prompt('Nechta serial ko’rdingiz?', '')
+    }
+}
 
-//Number methods
+function setFavouriteSeries() {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt(`Oxirgi ko’rgan serialingiz ${i + 1}?`, '')
+        const b = prompt(`Nechi baxo berasiz? ${i + 1}`, '')
 
-const number = 12.42
-const width = '100.32px'
+        if (a !== null && b !== null && a !== '' && b !== '') {
+            seriesDB.series[a] = b
+        } else {
+            i--
+        }
+    }
+}
 
-console.log('Sonni yaxlitlab beradi', Math.round(number))
-console.log('Sonni butun qismini olib beradi', Math.floor(number))
-console.log('String ma;lumot turidan butun sonni qaytarib beradi', parseInt(width))
-console.log('String ma\'\lumot turidan sonni qaytarib beradi', parseFloat(width))
+function detectingLevel() {
+    if (seriesDB.count < 5) {
+        console.log("Kam serial ko'ripsiz")
+    } else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+        console.log('Siz classik tamoshabin ekansiz')
+    } else if (seriesDB.count >= 10) {
+        console.log('Siz serialchi zvezda ekansiz')
+    }
+}
 
+function writeGenres() {
+    for (let i = 0; i < 3; i++) {
+        const genre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}?`, '')
+        seriesDB.genres[i] = genre
+    }
+}
+
+function showDb(isPrivate) {
+    if (!isPrivate) {
+        console.log(seriesDB)
+    } else {
+        console.log("Ma'lumot maxfiy saqlanmoqda")
+    }
+}
