@@ -35,10 +35,35 @@ const person = {
 
 // #3 Spread operatori yordamida iteratsiya. Bu ES8 da paydo bo'lgan javascriptda
 
-const secondPerson = { ...person }
+// const secondPerson = { ...person }
+//
+// secondPerson.name = 'Muffy'
+// secondPerson.age = 18
+//
+// console.log(person)
+// console.log(secondPerson)
 
-secondPerson.name = 'Muffy'
-secondPerson.age = 18
+//Arraylarni clonlash
+//#1. Slice methodi yordamida
 
-console.log(person)
-console.log(secondPerson)
+const cars = ['BMW', "Hyundai", "Porch"]
+// const scars = cars.slice()
+// scars.push('Suzuki')
+// console.log(cars)
+// console.log(scars)
+
+// #2 Spread operatori yordamida ES8
+// const copy = [...cars]
+// copy.push('Subaru')
+//
+// console.log(copy)
+
+// function log(a,b,c){
+//     console.log('First', a)
+//     console.log('Second', b)
+//     console.log('Third', c)
+// }
+//
+// const arr = [1,2,3]
+//
+// log(...arr)
