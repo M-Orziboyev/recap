@@ -1,24 +1,31 @@
 const ads = document.querySelector('.promo__adv')
 const genre = document.querySelector('.promo__genre')
 const background = document.querySelector('.promo__bg')
-const series = document.querySelectorAll('li')
-const copySeries = []
+const seriesList = document.querySelector('.promo__interactive-list')
 
 ads.remove()
 
 genre.innerHTML = '<p>Comedy</p>'
 
-background.style.background = `url(\'../img/1.jpg\') center center/cover no-repeat`
+background.style.background = `url(\'../img/1.jpg\')`
 
 
-// series.forEach((item, index) => {
-//     copySeries.push(`${index}: ${item}`)
-// })
-//
-// console.log(copySeries)
-
-for (let i = 0; i < series.length; i++) {
-    copySeries.push(`${i}: ${series[i]}`)
+const seriesDB = {
+    series: [
+        "OMAR",
+        "The Final Legacy",
+        "ERTUGRUL",
+        "MAGNIFICENT CENTURY",
+        "GREAT SELJUKS: GUARDIANS..."
+    ]
 }
+seriesList.innerHTML = '';
 
-console.log(copySeries)
+seriesDB.series.forEach((item, index) => {
+    seriesList.innerHTML += `
+    <li class="promo__interactive-item">
+                        ${index + 1} ${item}
+                        <div class="delete"></div>
+     </li>
+    `
+})
