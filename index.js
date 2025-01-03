@@ -1,77 +1,11 @@
-const seriesDB = {
-    count: 0,
-    series: {},
-    actors: {},
-    genres: [],
-    private: false,
-    start: function () {
-        seriesDB.count = +prompt('Nechta serial ko’rdingiz?', '')
+const box = document.querySelector('.box'),
+    button = document.querySelectorAll('button'),
+    circles = document.querySelectorAll('circle');
 
-        while (
-            seriesDB.count == '' ||
-            seriesDB.count == null ||
-            isNaN(seriesDB.count)
-            ) {
-            seriesDB.count = +prompt('Nechta serial ko’rdingiz?', '')
-        }
-    },
-    setSeries: function () {
-        for (let i = 0; i < 2; i++) {
-            const a = prompt(`Oxirgi ko’rgan serialingiz ${i + 1}?`, '')
-            const b = prompt(`Nechi baxo berasiz? ${i + 1}`, '')
-
-            if (a !== null && b !== null && a !== '' && b !== '') {
-                seriesDB.series[a] = b
-            } else {
-                i--
-            }
-        }
-    },
-    detectingLevel: function () {
-        if (seriesDB.count < 5) {
-            console.log("Kam serial ko'ripsiz")
-        } else if (seriesDB.count >= 5 && seriesDB.count < 10) {
-            console.log('Siz classik tamoshabin ekansiz')
-        } else if (seriesDB.count >= 10) {
-            console.log('Siz serialchi zvezda ekansiz')
-        }
-    },
-    visibleDB: function () {
-        if (seriesDB.private) {
-            seriesDB.private = false
-        } else {
-            seriesDB.private = true
-        }
-    },
-    showDB: function () {
-        if (!seriesDB.private) {
-            console.log(seriesDB)
-        } else {
-            console.log("Ma'lumot mahfiy saqlanmoqda")
-        }
-    },
-    writeGenres: function () {
-        // for (let i = 0; i < 3; i++) {
-        // 	const genre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}?`, '')
-        // 	if (genre === '' || genre === null) {
-        // 		i--
-        // 	} else {
-        // 		seriesDB.genres[i] = genre
-        // 	}
-        // }
-
-        let genres = prompt(
-            "Yaxshi ko'rgan janringizni vergul yordamida yozing!",
-            ''
-        )
-
-        while (genres == '' || genres == null) {
-            genres = prompt("Yaxshi ko'rgan janringizni vergul yordamida yozing!", '')
-        }
-
-        if (genres) {
-            seriesDB.genres = genres.split(', ')
-            seriesDB.genres.sort()
-        }
-    },
+for (let i = 0; i < circles.length; i++) {
+    circles[i].style.borderRadius = '0';
 }
+button.forEach((item) => {
+    item.style.borderRadius = '100%'
+    item.style.backgroundColor = '#aac';
+})
