@@ -1,11 +1,24 @@
-const box = document.querySelector('.box'),
-    button = document.querySelectorAll('button'),
-    circles = document.querySelectorAll('circle');
+const ads = document.querySelector('.promo__adv')
+const genre = document.querySelector('.promo__genre')
+const background = document.querySelector('.promo__bg')
+const series = document.querySelectorAll('li')
+const copySeries = []
 
-for (let i = 0; i < circles.length; i++) {
-    circles[i].style.borderRadius = '0';
+ads.remove()
+
+genre.innerHTML = '<p>Comedy</p>'
+
+background.style.background = `url(\'../img/1.jpg\') center center/cover no-repeat`
+
+
+// series.forEach((item, index) => {
+//     copySeries.push(`${index}: ${item}`)
+// })
+//
+// console.log(copySeries)
+
+for (let i = 0; i < series.length; i++) {
+    copySeries.push(`${i}: ${series[i]}`)
 }
-button.forEach((item) => {
-    item.style.borderRadius = '100%'
-    item.style.backgroundColor = '#aac';
-})
+
+console.log(copySeries)
