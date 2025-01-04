@@ -1,74 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const advs = document.querySelectorAll('.promo__adv'),
-        genre = document.querySelector('.promo__genre'),
-        wrapper = document.querySelector('.promo__bg'),
-        seriesList = document.querySelector('.promo__interactive-list'),
-        addForm = document.querySelector('form.add'),
-        input = addForm.querySelector('.adding__input'),
-        checkbox = addForm.querySelector("[type='checkbox']")
+const btns = document.querySelectorAll('button'),
+	wrapper = document.querySelector('.wrapper')
 
-    const seriesDB = {
-        series: [
-            'Omar',
-            'The Final Legacy',
-            'Ertugrul',
-            'Magnificent Century',
-            'The Great Seljuks: Guardians...',
-        ],
-    }
+btns.forEach(item => {
+	item.addEventListener('click', () => {
+		console.log('CLICKED')
+	})
+})
 
-    addForm.addEventListener('submit', event => {
-        event.preventDefault()
+wrapper.addEventListener('click', event => {
+	if (event.target && event.target.matches('button.blue')) {
+		console.log('CLICK')
+	}
+})
 
-        let newValue = input.value
-        const favourite = checkbox.checked
+const button = document.createElement('button')
+button.classList.add('blue')
+button.textContent = 6
+wrapper.append(button)
 
-        if (newValue) {
-            if (newValue.length > 18) {
-                newValue = `${newValue.slice(0, 18)}...`
-            }
+console.log(btns[0].classList.value)
+console.log(btns[0].classList.item(0))
+console.log(btns[0].classList.add('yellow'))
+console.log(btns[0].classList.remove('blue'))
+console.log(btns[0].classList.toggle('blue'))
+console.log(btns[0].classList.toggle('blue'))
 
-            if (favourite) {
-                console.log('Sevimli serial qo’shilidi')
-            }
+if (btns[1].classList.contains('red')) {
+	console.log('Element contain red class')
+}
 
-            seriesDB.series.push(newValue)
-            sort()
-            setList()
-            event.target.reset()
-        }
-    })
+btns[0].addEventListener('click', () => {
+if (btns[0].classList.contains('red')) {
+	btns[0].classList.remove('red')
+} else {
+	btns[0].classList.add('red')
+}
 
-    genre.textContent = 'Comedy'
-
-    wrapper.style.backgroundImage = 'url(./img/1.jpg)'
-
-    function sort() {
-        seriesDB.series.sort()
-    }
-
-    function setList() {
-        seriesList.innerHTML = ''
-        sort()
-
-        seriesDB.series.forEach((item, index) => {
-            seriesList.innerHTML += `
-				<li class="promo__interactive-item">
-					${index + 1}. ${item}
-					<div class="delete"></div>
-				</li>
-			`
-        })
-
-        document.querySelectorAll('.delete').forEach((trashBtn, index) => {
-            trashBtn.addEventListener('click', () => {
-                trashBtn.parentElement.remove()
-                seriesDB.series.splice(index, 1)
-                setList()
-            })
-        })
-    }
-
-    sort()
-    setList()
+	btns[1].classList.toggle('red')
 })
