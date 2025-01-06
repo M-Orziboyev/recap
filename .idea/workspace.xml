@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="ClassList va Delegatsiya">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/recap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/Logotype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/Star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/content_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/content_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/facebook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/media.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2r23HXormtR1puv1M0N9syHWdgh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Muzaffar/Dasturlash/MERN SAMMI/recap&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="" />
+      <created>1735743262521</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735743262521</updated>
+      <workItem from="1735743288526" duration="169000" />
+      <workItem from="1735743491195" duration="3000" />
+      <workItem from="1735743569946" duration="2237000" />
+      <workItem from="1735787477118" duration="6713000" />
+      <workItem from="1735807961907" duration="4476000" />
+      <workItem from="1735876998295" duration="2319000" />
+      <workItem from="1735906601453" duration="3824000" />
+      <workItem from="1735922318391" duration="2112000" />
+      <workItem from="1735980852295" duration="2330000" />
+      <workItem from="1735990369584" duration="771000" />
+      <workItem from="1736157325986" duration="713000" />
+      <workItem from="1736176823718" duration="3062000" />
+    </task>
+    <task id="LOCAL-00001" summary="javascript methods">
+      <created>1735747536911</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735747536912</updated>
+    </task>
+    <task id="LOCAL-00002" summary="practice (function declaretion)">
+      <created>1735789593956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735789593956</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Callback">
+      <created>1735790776818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735790776818</updated>
+    </task>
+    <task id="LOCAL-00004" summary="iteration">
+      <created>1735792170022</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735792170022</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I create my own method in  object">
+      <created>1735792361031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735792361031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="release key factors from object">
+      <created>1735801275775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735801275775</updated>
+    </task>
+    <task id="LOCAL-00007" summary="massive">
+      <created>1735809024770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735809024770</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Objectlarni clonlash">
+      <created>1735811574720</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735811574720</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Arraylarni clonlash va spread operatori">
+      <created>1735812445215</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735812445215</updated>
+    </task>
+    <task id="LOCAL-00010" summary="DOM stuff">
+      <created>1735887882117</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887882117</updated>
+    </task>
+    <task id="LOCAL-00011" summary="DOM stuff part2">
+      <created>1735925424286</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735925424286</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Events">
+      <created>1735985995145</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735985995145</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ClassList va Delegatsiya">
+      <created>1735990547349</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735990547349</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="javascript methods" />
+    <MESSAGE value="practice (function declaretion)" />
+    <MESSAGE value="Callback" />
+    <MESSAGE value="iteration" />
+    <MESSAGE value="I create my own method in  object" />
+    <MESSAGE value="release key factors from object" />
+    <MESSAGE value="massive" />
+    <MESSAGE value="Objectlarni clonlash" />
+    <MESSAGE value="Arraylarni clonlash va spread operatori" />
+    <MESSAGE value="DOM stuff" />
+    <MESSAGE value="DOM stuff part2" />
+    <MESSAGE value="Events" />
+    <MESSAGE value="ClassList va Delegatsiya" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClassList va Delegatsiya" />
+  </component>
+</project>
