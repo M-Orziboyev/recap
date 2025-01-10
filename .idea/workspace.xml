@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="ClassList va Delegatsiya">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/recap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/Logotype.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/Star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/trash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/content_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/content_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebook.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/media.png" beforeDir="false" />
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="classList and delogatsiya part2,3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +77,9 @@
       <workItem from="1735990369584" duration="771000" />
       <workItem from="1736157325986" duration="713000" />
       <workItem from="1736176823718" duration="3062000" />
+      <workItem from="1736275865321" duration="490000" />
+      <workItem from="1736411582316" duration="3008000" />
+      <workItem from="1736513757005" duration="1421000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -183,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1735990547349</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="classList and delogatsiya part2">
+      <created>1736275996449</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736275996449</updated>
+    </task>
+    <task id="LOCAL-00015" summary="classList and delogatsiya part2,3">
+      <created>1736276034463</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736276034463</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +206,8 @@
     <MESSAGE value="DOM stuff part2" />
     <MESSAGE value="Events" />
     <MESSAGE value="ClassList va Delegatsiya" />
-    <option name="LAST_COMMIT_MESSAGE" value="ClassList va Delegatsiya" />
+    <MESSAGE value="classList and delogatsiya part2" />
+    <MESSAGE value="classList and delogatsiya part2,3" />
+    <option name="LAST_COMMIT_MESSAGE" value="classList and delogatsiya part2,3" />
   </component>
 </project>
