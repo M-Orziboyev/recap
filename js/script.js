@@ -39,12 +39,20 @@
 function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.hello = function(){
+    this.hello = function () {
         console.log(`hello ${firstName} ${lastName}`)
     }
 }
 
+Person.prototype.convertAge = function (age) {
+    console.log(`${this.firstName} age is: ${age}`)
+}
+
 const firstPerson = new Person('Muzaffar', 'Orziboyev')
+const secondPerson = new Person('Umar', 'Abdurahmonov')
 
 // console.log(firstPerson)
 firstPerson.hello()
+secondPerson.hello()
+firstPerson.convertAge(17)
+secondPerson.convertAge(20)
