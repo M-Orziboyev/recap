@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="classList and delogatsiya part2,3">
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Context this">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -83,7 +83,8 @@
       <workItem from="1736275865321" duration="490000" />
       <workItem from="1736411582316" duration="3008000" />
       <workItem from="1736513757005" duration="1421000" />
-      <workItem from="1736940261736" duration="907000" />
+      <workItem from="1736940261736" duration="1432000" />
+      <workItem from="1737026448585" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736276034463</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Context this">
+      <created>1736942139710</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736942139710</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +220,7 @@
     <MESSAGE value="ClassList va Delegatsiya" />
     <MESSAGE value="classList and delogatsiya part2" />
     <MESSAGE value="classList and delogatsiya part2,3" />
-    <option name="LAST_COMMIT_MESSAGE" value="classList and delogatsiya part2,3" />
+    <MESSAGE value="Context this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Context this" />
   </component>
 </project>
