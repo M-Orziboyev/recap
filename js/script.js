@@ -25,3 +25,16 @@ const secondPerson = new StatusPeople('Muzaffar', 'Orziboyev', false)
 console.log(firstPerson.greetings())
 console.log(secondPerson.get())
 
+function logger (a, b, ...rest) {
+    console.log(a)
+    console.log(b)
+    console.log(rest)
+    return rest
+}
+
+console.log(logger(12, 10, 2,3,4,5,6,7,8,9,19))
+
+const calc = (a, b = 2) => {
+    return a + b
+}
+console.log(calc(1))
