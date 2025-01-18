@@ -137,13 +137,13 @@ window.addEventListener('DOMContentLoaded', () => {
     modalCloseBtn.addEventListener("click", closeModal)
 
     modal.addEventListener("click", (event) => {
-        if(event.target === modal){
+        if (event.target === modal) {
             closeModal()
         }
     })
 
     document.addEventListener("keydown", (event) => {
-        if(event.code === "Escape" && modal.classList.contains("show")) {
+        if (event.code === "Escape" && modal.classList.contains("show")) {
             closeModal()
         }
     })
@@ -152,33 +152,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Class
 
+
+
     class OfferMenu {
-        constructor(src, alt, title, descr, discount, sale, parentSelector) {
+        constructor(src, alt, title, descr, discount, sell, parentOffer) {
             this.src = src
             this.alt = alt
             this.title = title
             this.descr = descr
             this.discount = discount
-            this.sale = sale
-            this.parent = document.querySelector(parentSelector)
-            this.formatToUSD()
+            this.sell = sell
+            this.parent = document.querySelector(parentOffer)
         }
 
-        formatToUSD() {
-            this.discount = this.discount.toLocaleString("en-US", {style:"currency", currency:"USD"})
-            this.sale = this.sale.toLocaleString("en-US", {style:"currency", currency:"USD"})
-        }
 
         render() {
-            const element = document.createElement("div")
+            const element = document.createElement('div')
             element.innerHTML = `
-				<img src="${this.src}" alt="${this.alt}">
-				<div>
-					<h3>${this.title}</h3>
-					<p>${this.descr}</p>
-					<p><del>${this.discount}</del> <span class="primary-text">${this.sale}</span></p>
-				</div>
-			`
+                <img src="${this.src}" alt="${this.alt}">
+                <div>
+                  <h3>${this.title}</h3>
+                  <p>${this.descr}</p>
+                  <p><del>${this.discount}</del> <span class="primary-text">${this.sell}</span></p>
+                </div>
+            `
 
             this.parent.append(element)
         }

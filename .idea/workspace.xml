@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Class">
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Class Amaliyit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +86,8 @@
       <workItem from="1736513757005" duration="1421000" />
       <workItem from="1736940261736" duration="1432000" />
       <workItem from="1737026448585" duration="2089000" />
+      <workItem from="1737113564053" duration="670000" />
+      <workItem from="1737193575791" duration="4187000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1737028170564</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Class Amaliyit">
+      <created>1737114244147</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737114244147</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +239,7 @@
     <MESSAGE value="classList and delogatsiya part2,3" />
     <MESSAGE value="Context this" />
     <MESSAGE value="Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class" />
+    <MESSAGE value="Class Amaliyit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Amaliyit" />
   </component>
 </project>
