@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Class Amaliyit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Class Amaliyot" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +83,8 @@
       <workItem from="1736940261736" duration="1432000" />
       <workItem from="1737026448585" duration="2089000" />
       <workItem from="1737113564053" duration="670000" />
-      <workItem from="1737193575791" duration="4187000" />
+      <workItem from="1737193575791" duration="4516000" />
+      <workItem from="1737262543547" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -215,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1737114244147</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Class Amaliyot">
+      <created>1737198497629</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737198497629</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +244,7 @@
     <MESSAGE value="Context this" />
     <MESSAGE value="Class" />
     <MESSAGE value="Class Amaliyit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Amaliyit" />
+    <MESSAGE value="Class Amaliyot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Amaliyot" />
   </component>
 </project>

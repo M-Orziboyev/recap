@@ -153,7 +153,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // Class
 
 
-
     class OfferMenu {
         constructor(src, alt, title, descr, discount, sell, parentOffer) {
             this.src = src
@@ -209,7 +208,61 @@ window.addEventListener('DOMContentLoaded', () => {
     ]
 
     offers.forEach(offer => {
-        const {src, alt,descr,discount,sale,title} = offer
-        new OfferMenu(src,alt,title,descr,discount,sale,".offers-items").render()
+        const {src, alt, descr, discount, sale, title} = offer
+        new OfferMenu(src, alt, title, descr, discount, sale, ".offers-items").render()
     })
+})
+
+class DayTimeItems {
+    constructor(src, alt, title, desc, specialTimes) {
+        this.src = src
+        this.alt = alt
+        this.title = title
+        this.descr = desc
+        this.spItems = document.querySelector(specialTimes)
+    }
+
+    render() {
+        const element = document.querySelector('div')
+        element.classList.add('daytime-item')
+        element.innerHTML = `
+          <img src="${this.src}" alt="${this.alt}">
+          <h3>${this.title}</h3>
+          <p>${this.descr}</p>
+        `
+        this.spItems.append(element)
+    }
+}
+
+const items = [
+    {
+        src: "./img/breckfastIcon.png",
+        alt: "Breakfast",
+        title: "Breakfast",
+        desc: "8:00 am to 10:00 am"
+    },
+    {
+        src: "./img/lunchIcon.png",
+        alt: "Lunch",
+        title: "Lunch",
+        desc: "4:00 pm to 7:00 pm"
+    },
+    {
+        src: "./img/dinnerIcon.png",
+        alt: "Dinner",
+        title: "Dinner",
+        desc: "9:00 pm to 1:00 Am"
+    },
+    {
+        src: "./img/dessertIcon.png",
+        alt: "Dessert",
+        title: "Dessert",
+        desc: "All day"
+    },
+]
+
+
+items.forEach(stuff => {
+    const {src, alt, title, desc} = stuff;
+    new DayTimeItems(src, alt, title, desc, '.daytime-items').render()
 })
