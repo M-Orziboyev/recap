@@ -1,68 +1,330 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const postWrapper = document.querySelector('.posts')
+// window.addEventListener('DOMContentLoaded', () => {
+//     // Tabs
+//
+//     const tabs = document.querySelectorAll('.tabheader__item'),
+//         tabContents = document.querySelectorAll('.tab_content'),
+//         tabParents = document.querySelector('.tabheader__items')
+//
+//     function hideTabContents() {
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.add('hide')
+//             tabContent.classList.remove('show')
+//         })
+//
+//         tabs.forEach(tab => {
+//             tab.classList.remove('tabheader__item_active')
+//         })
+//     }
+//
+//     function showTabContent(index = 0) {
+//         tabContents[index].classList.add('show', 'fade')
+//         tabContents[index].classList.remove('hide')
+//         tabs[index].classList.add('tabheader__item_active')
+//     }
+//
+//     hideTabContents()
+//     showTabContent()
+//
+//     tabParents.addEventListener('click', event => {
+//         const target = event.target
+//
+//         if (target && target.classList.contains('tabheader__item')) {
+//             tabs.forEach((tab, index) => {
+//                 if (target === tab) {
+//                     hideTabContents()
+//                     showTabContent(index)
+//                 }
+//             })
+//         }
+//     })
+//
+//     // Loader
+//
+//     const loaderWrapper = document.querySelector('.loader-wrapper')
+//
+//     setTimeout(() => {
+//         loaderWrapper.style.display = 'none'
+//     }, 1500)
+//
+//     // Timer
+//
+//     const deadline = '2024-02-01'
+//
+//     function getTimeRemaining(endtime) {
+//         let days, hours, minutes, seconds
+//         const time = Date.parse(endtime) - Date.parse(new Date())
+//
+//         if (time <= 0) {
+//             days = 0
+//             hours = 0
+//             minutes = 0
+//             seconds = 0
+//         } else {
+//             ;(days = Math.floor(time / (1000 * 60 * 60 * 24))),
+//                 (hours = Math.floor((time / (1000 * 60 * 60)) % 24)),
+//                 (minutes = Math.floor((time / (1000 * 60)) % 60)),
+//                 (seconds = Math.floor((time / 1000) % 60))
+//         }
+//
+//         return {
+//             totalTime: time,
+//             days,
+//             hours,
+//             minutes,
+//             seconds,
+//         }
+//     }
+//
+//     function formatNumber(number) {
+//         if (number >= 0 && number < 10) {
+//             return `0${number}`
+//         } else {
+//             return number
+//         }
+//     }
+//
+//     function setClock(selector, endtime) {
+//         const timer = document.querySelector(selector),
+//             days = timer.querySelector('#days'),
+//             hours = timer.querySelector('#hours'),
+//             minutes = timer.querySelector('#minutes'),
+//             seconds = timer.querySelector('#seconds'),
+//             timeInterval = setInterval(updateClock, 1000)
+//
+//         updateClock()
+//
+//         function updateClock() {
+//             const time = getTimeRemaining(endtime)
+//
+//             days.textContent = formatNumber(time.days)
+//             hours.textContent = formatNumber(time.hours)
+//             minutes.textContent = formatNumber(time.minutes)
+//             seconds.textContent = formatNumber(time.seconds)
+//
+//             if (time.totalTime <= 0) {
+//                 clearInterval(timeInterval)
+//             }
+//         }
+//     }
+//
+//     setClock('.timer', deadline)
+//
+//     // Modal
+//
+//     const modalOpenBtns = document.querySelectorAll('[data-modal]'),
+//         modal = document.querySelector('.modal'),
+//         modalContent = document.querySelector('.modal__content')
+//
+//     function openModal() {
+//         modalContent.classList.add('modal_fade')
+//         modal.classList.add('show')
+//         modal.classList.remove('hide')
+//         document.body.style.overflow = 'hidden'
+//         clearInterval(modalTimerId)
+//     }
+//
+//     function closeModal() {
+//         modal.classList.add('hide')
+//         modal.classList.remove('show')
+//         document.body.style.overflow = ''
+//     }
+//
+//     modalOpenBtns.forEach(btn => {
+//         btn.addEventListener('click', openModal)
+//     })
+//
+//     modal.addEventListener('click', event => {
+//         if (
+//             event.target === modal ||
+//             event.target.getAttribute('data-modal-close') === ''
+//         ) {
+//             closeModal()
+//         }
+//     })
+//
+//     document.addEventListener('keydown', event => {
+//         if (event.code === 'Escape' && modal.classList.contains('show')) {
+//             closeModal()
+//         }
+//     })
+//
+//     const modalTimerId = setTimeout(openModal, 50000)
+//
+//     // Class
+//
+//     class OfferMenu {
+//         constructor(src, alt, title, descr, discount, sale, parentSelector) {
+//             this.src = src
+//             this.alt = alt
+//             this.title = title
+//             this.descr = descr
+//             this.discount = discount
+//             this.sale = sale
+//             this.parent = document.querySelector(parentSelector)
+//             this.formatToUSD()
+//         }
+//
+//         formatToUSD() {
+//             this.discount = this.discount.toLocaleString('en-US', {
+//                 style: 'currency',
+//                 currency: 'USD',
+//             })
+//             this.sale = this.sale.toLocaleString('en-US', {
+//                 style: 'currency',
+//                 currency: 'USD',
+//             })
+//         }
+//
+//         render() {
+//             const element = document.createElement('div')
+//             element.innerHTML = `
+// 				<img src="${this.src}" alt="${this.alt}">
+// 				<div>
+// 					<h3>${this.title}</h3>
+// 					<p>${this.descr}</p>
+// 					<p><del>${this.discount}</del> <span class="primary-text">${this.sale}</span></p>
+// 				</div>
+// 			`
+//
+//             this.parent.append(element)
+//         }
+//     }
+//
+//     const offers = [
+//         {
+//             src: './img/offer1.png',
+//             alt: 'Quattro Pasta',
+//             title: 'Quattro Pasta',
+//             descr:
+//                 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.',
+//             discount: 55,
+//             sale: 20,
+//         },
+//         {
+//             src: './img/offer2.png',
+//             alt: 'Vegertarian Pasta',
+//             title: 'Vegertarian Pasta',
+//             descr:
+//                 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.',
+//             discount: 75,
+//             sale: 25,
+//         },
+//         {
+//             src: './img/offer3.png',
+//             alt: 'Gluten-Free Pasta',
+//             title: 'Gluten-Free Pasta',
+//             descr:
+//                 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.',
+//             discount: 25,
+//             sale: 15,
+//         },
+//     ]
+//
+//     offers.forEach(offer => {
+//         const {src, alt, descr, discount, sale, title} = offer
+//         new OfferMenu(
+//             src,
+//             alt,
+//             title,
+//             descr,
+//             discount,
+//             sale,
+//             '.offers-items'
+//         ).render()
+//     })
+//
+//     // FORM
+//
+//
+//     const form = document.querySelector('form')
+//     const telegramBotToken = '8001384259:AAE0-c7Buk1iT02GoGEQ6JFLdSiGETyl4hc'
+//     const chatId = '5083704065'
+//
+//     form.addEventListener('submit', (e) => {
+//         e.preventDefault()
+//
+//         const formData = new FormData(form)
+//         const object = {}
+//         formData.forEach((value, key) => {
+//             object[key] = value
+//         })
+//
+//         fetch(`https://api.telegram.org/bot/${telegramBotToken}/sendMessage`, {
+//             method: 'POST',
+//             headers: {'Content-Type': 'application/json'},
+//             body: JSON.stringify({
+//                 chat_Id: chatId,
+//                 text: `
+//                 Name: ${object.name}. Phone ${object.phone}
+//                 `
+//             })
+//         })
+//     })
+//
+//
+//     const cars = [1, 5, 10, 15]
+//
+//     cars.forEach(item => {
+//         console.log(item)
+//     })
+//
+//     const sumNums = cars.reduce((previousValue, currentValue) => previousValue + currentValue, 10)
+//
+//     console.log(sumNums)
+// })
+//
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'GET',
-        headers: {'Content-Type': 'application/json'}
-    }).then(response => response.json())
-        .then(data => {
-            data.forEach((item, index) => {
-                const postEl = document.createElement('div');
-                postEl.classList.add('post')
-                postEl.innerHTML += `
-                <h4> <b>${index + 1}</b> ${item.title}</h4>
-                <p>${item.body}</p>
-              `
-                postWrapper.append(postEl)
-            })
-        }).catch(() => {
-        const error = document.createElement('div')
-        error.classList.add('error')
-        error.innerHTML = 'Something went wrong with the network connections'
-        postWrapper.append(error)
-    })
 
-    const form = document.querySelector('form')
+//Array methods
 
-    form.addEventListener('submit', event => {
-        event.preventDefault()
+const cars = ['Matiz', 'Spark', 'Tiko', 'Damas']
 
-        const formData = new FormData(form)
-
-        const object = {}
-        formData.forEach((value, key) => {
-            object[key] = value
-        })
-
-        const json = JSON.stringify(object)
-        console.log(json)
-
-        fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: json,
-        }).then(res => res.json()).then(data => {
-            form.reset()
-            const postEl = document.createElement('div');
-            postEl.classList.add('post')
-            postEl.innerHTML += `
-                    <h4> <b>${data.id}</b> ${data.title}</h4>
-                    <p>${data.body}</p>
-                  `
-            postWrapper.append(postEl)
-        }).catch(err => {
-            console.log(err)
-        })
-    })
+// forEach --> return nothing, just iterate the massive
+cars.forEach(item => {
+    console.log(item)
 })
 
+// map
+const car = cars.map(item => item.toLowerCase())
 
+const infoCars = [
+    {
+        name: 'BMW',
+        year: 2021
+    },
+    {
+        name: 'MWD',
+        year: 2021
+    },
+    {
+        name: 'Tiko',
+        year: 2013
+    },
+    {
+        name: 'Man',
+        year: 2014
+    }
+]
+//filter
+const filTer = infoCars.filter(item => item.year > 2020)
+//reduce
 
+const sumUp = [10, 20, 30, 40, 50, 60]
 
+const sumDown = sumUp.reduce((previousValue, currentValue) =>
+    previousValue + currentValue
+)
 
+// some, every
+const mix = [10, '20', '30', '40', 'as', 'with', 'get']
+const some = mix.some((item) => typeof item === 'number')
+const ever = mix.every((item) => typeof item === 'string')
 
-
-
+console.log(car)
+console.log(filTer)
+console.log(sumDown)
+console.log(some)
+console.log(ever)
 
 
 
