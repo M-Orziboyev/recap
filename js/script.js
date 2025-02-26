@@ -357,11 +357,12 @@ if (theme === "light") {
     document.body.style.backgroundColor = "#1f1f1f"
 }
 
-const form = document.querySelector("form"),
-    postParent = document.querySelector(".posts")
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault()
+const form = document.querySelector('form'),
+    postParent = document.querySelector('.posts')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
 
     const formData = new FormData(form)
 
@@ -369,29 +370,31 @@ form.addEventListener("submit", (event) => {
     formData.forEach((value, key) => {
         object[key] = value
     })
-
-    const db = JSON.parse(localStorage.getItem("posts"))
+    const db = JSON.parse(localStorage.getItem('posts'))
 
     if (db) {
-        localStorage.setItem("posts", JSON.stringify([...db, object]))
+        localStorage.setItem('posts', JSON.stringify([...db, object]))
     } else {
-        localStorage.setItem("posts", JSON.stringify([object]))
+        localStorage.setItem('posts', JSON.stringify([object]))
     }
+
 })
 
 getPosts()
 
 function getPosts() {
-    const posts = JSON.parse(localStorage.getItem("posts"))
+    const localValues = JSON.parse(localStorage.getItem('posts'))
 
-    posts.forEach((item, index) => {
-        const postEl = document.createElement("div")
-        postEl.classList.add("post")
-        postEl.innerHTML = `
-			<h4> <b>#${index + 1}.</b> ${item.title}</h4>
-			<p>${item.body}</p>
-		`
-
-        postParent.append(postEl)
+    const posts = document.createElement('div')
+    posts.classList.add('.post')
+    localValues.forEach((item, index) => {
+        posts.innerHTML +=`
+            <h4><b>#${index + 1} </b>${item.title}</h4>
+            <hr/>
+            <p>${item.body}</p>
+        `
     })
+    postParent.append(posts)
 }
+
+

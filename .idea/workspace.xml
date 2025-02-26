@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Array methods (forEach, map, filter, reduce, some every)">
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="LocalStorage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +100,8 @@
       <workItem from="1740404306307" duration="1957000" />
       <workItem from="1740483907838" duration="896000" />
       <workItem from="1740492896872" duration="2369000" />
+      <workItem from="1740566683194" duration="4839000" />
+      <workItem from="1740586771715" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -276,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740495928883</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="LocalStorage">
+      <created>1740572720108</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740572720108</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +315,7 @@
     <MESSAGE value="Promise" />
     <MESSAGE value="post method" />
     <MESSAGE value="Array methods (forEach, map, filter, reduce, some every)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Array methods (forEach, map, filter, reduce, some every)" />
+    <MESSAGE value="LocalStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="LocalStorage" />
   </component>
 </project>
