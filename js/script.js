@@ -345,56 +345,83 @@
 //         }
 //     })
 // })
-"use strict"
+// "use strict"
+//
+// localStorage.setItem("sammi-theme", "light")
+//
+// const theme = localStorage.getItem("sammi-theme")
+//
+// if (theme === "light") {
+//     document.body.style.backgroundColor = "#eee"
+// } else if (theme === "dark") {
+//     document.body.style.backgroundColor = "#1f1f1f"
+// }
+//
+//
+// const form = document.querySelector('form'),
+//     postParent = document.querySelector('.posts')
+//
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//
+//     const formData = new FormData(form)
+//
+//     const object = {}
+//     formData.forEach((value, key) => {
+//         object[key] = value
+//     })
+//     const db = JSON.parse(localStorage.getItem('posts'))
+//
+//     if (db) {
+//         localStorage.setItem('posts', JSON.stringify([...db, object]))
+//     } else {
+//         localStorage.setItem('posts', JSON.stringify([object]))
+//     }
+//
+// })
+//
+// getPosts()
+//
+// function getPosts() {
+//     const localValues = JSON.parse(localStorage.getItem('posts'))
+//
+//     const posts = document.createElement('div')
+//     posts.classList.add('.post')
+//     localValues.forEach((item, index) => {
+//         posts.innerHTML +=`
+//             <h4><b>#${index + 1} </b>${item.title}</h4>
+//             <hr/>
+//             <p>${item.body}</p>
+//         `
+//     })
+//     postParent.append(posts)
+// }
 
-localStorage.setItem("sammi-theme", "light")
-
-const theme = localStorage.getItem("sammi-theme")
-
-if (theme === "light") {
-    document.body.style.backgroundColor = "#eee"
-} else if (theme === "dark") {
-    document.body.style.backgroundColor = "#1f1f1f"
-}
+// const password = 'Mu.....'
+//
+// console.log(password.replace(/\./m, 'slima'))
 
 
-const form = document.querySelector('form'),
-    postParent = document.querySelector('.posts')
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    const formData = new FormData(form)
-
-    const object = {}
-    formData.forEach((value, key) => {
-        object[key] = value
-    })
-    const db = JSON.parse(localStorage.getItem('posts'))
-
-    if (db) {
-        localStorage.setItem('posts', JSON.stringify([...db, object]))
-    } else {
-        localStorage.setItem('posts', JSON.stringify([object]))
-    }
-
-})
-
-getPosts()
-
-function getPosts() {
-    const localValues = JSON.parse(localStorage.getItem('posts'))
-
-    const posts = document.createElement('div')
-    posts.classList.add('.post')
-    localValues.forEach((item, index) => {
-        posts.innerHTML +=`
-            <h4><b>#${index + 1} </b>${item.title}</h4>
-            <hr/>
-            <p>${item.body}</p>
-        `
-    })
-    postParent.append(posts)
-}
+// i - register
+// g - global
+// m - ko'p qator
 
 
+// \d - digits
+// \w - words
+// \s - space
+// \D - not digits
+// \W - not words
+
+
+const myLovedOne = 'Mus 22li max  21on'
+const regex = /\D/ig
+console.log(myLovedOne.match(regex))
+
+
+
+// const email = 'muzaffar@gmail.com'
+//
+// const regex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+//
+// console.log(regex.test(email))

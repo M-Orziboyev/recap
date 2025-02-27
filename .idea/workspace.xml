@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="LocalStorage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,8 @@
       <workItem from="1740483907838" duration="896000" />
       <workItem from="1740492896872" duration="2369000" />
       <workItem from="1740566683194" duration="4839000" />
-      <workItem from="1740586771715" duration="627000" />
+      <workItem from="1740586771715" duration="714000" />
+      <workItem from="1740670101905" duration="1642000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -285,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740572720108</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="LocalStorage">
+      <created>1740589159471</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740589159472</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
