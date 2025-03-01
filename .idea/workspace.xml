@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="LocalStorage">
+    <list default="true" id="41b9f964-014e-47f5-88f3-dce421d7afbb" name="Changes" comment="Regular expression (regex)">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/current.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +58,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Node.js.script.js">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Muzaffar\Dasturlash\MERN SAMMI\recap" />
+      <recent name="D:\Muzaffar\Dasturlash\MERN SAMMI\recap\dist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/recap/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/script.js" working-dir="$PROJECT_DIR$/js">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/index.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.script.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
@@ -103,7 +125,9 @@
       <workItem from="1740492896872" duration="2369000" />
       <workItem from="1740566683194" duration="4839000" />
       <workItem from="1740586771715" duration="714000" />
-      <workItem from="1740670101905" duration="1642000" />
+      <workItem from="1740670101905" duration="2694000" />
+      <workItem from="1740805070198" duration="2550000" />
+      <workItem from="1740824332879" duration="4298000" />
     </task>
     <task id="LOCAL-00001" summary="javascript methods">
       <created>1735747536911</created>
@@ -294,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740589159472</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Regular expression (regex)">
+      <created>1740672190360</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1740672190360</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +356,7 @@
     <MESSAGE value="post method" />
     <MESSAGE value="Array methods (forEach, map, filter, reduce, some every)" />
     <MESSAGE value="LocalStorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="LocalStorage" />
+    <MESSAGE value="Regular expression (regex)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Regular expression (regex)" />
   </component>
 </project>
